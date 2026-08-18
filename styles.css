@@ -1,0 +1,63 @@
+:root{
+  --ink:#17211d;--muted:#64716b;--paper:#f5f4ee;--white:#fff;
+  --line:#d7ddd8;--accent:#375f50;--accent2:#a76545;--soft:#e7ece7;
+  --max:1180px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}
+a{color:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nav-wrap{position:sticky;top:0;z-index:20;background:rgba(245,244,238,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;text-decoration:none;border:1px solid var(--ink);padding:5px 9px}
+.nav-links{display:flex;gap:24px}.nav-links a{text-decoration:none;font-size:.88rem}.menu-btn{display:none;background:none;border:0;font:inherit}
+.hero{padding:92px 0 45px}.eyebrow,.section-label,.tag,.kicker{letter-spacing:.13em;text-transform:uppercase;font-size:.75rem;font-weight:700;color:var(--accent)}
+.hero-grid{display:grid;grid-template-columns:1.5fr .7fr;gap:70px;align-items:center}
+h1,h2{font-family:"Newsreader",serif;line-height:1.04;font-weight:600;margin:.2em 0}
+h1{font-size:clamp(3.2rem,7vw,6.4rem);max-width:1000px}h2{font-size:clamp(2.5rem,5vw,4.4rem);max-width:800px}
+h3{line-height:1.2}.lead{font-size:1.12rem;color:var(--muted);max-width:760px}
+.actions{display:flex;gap:10px;margin-top:28px}.button{padding:12px 17px;border:1px solid var(--ink);text-decoration:none;font-weight:600}.primary{background:var(--ink);color:var(--paper)}
+.hero-card{border:1px solid var(--line);padding:24px;background:rgba(255,255,255,.38)}
+.airflow{height:260px;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.outside{font-size:.7rem;letter-spacing:.15em}.particles{font-size:1.4rem;max-width:130px;line-height:2;color:var(--accent2)}
+.building{position:absolute;right:10px;bottom:25px;width:130px;height:125px;border:3px solid var(--ink);background:var(--soft)}
+.roof{position:absolute;width:95px;height:95px;border-left:3px solid var(--ink);border-top:3px solid var(--ink);transform:rotate(45deg);top:-50px;left:15px;background:var(--soft)}
+.room{position:absolute;inset:0;display:grid;place-items:center;font-size:.7rem;letter-spacing:.14em}.arrow{position:absolute;left:42%;top:47%;font-size:2rem}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:65px}
+.metrics div{padding:20px 12px;border-right:1px solid var(--line)}.metrics div:last-child{border:0}.metrics strong,.metrics span{display:block}.metrics span{font-size:.8rem;color:var(--muted)}
+.section{padding:105px 0}.section-alt{background:#e9ece6}.cards{display:grid;gap:18px;margin-top:45px}.three{grid-template-columns:repeat(3,1fr)}.two{grid-template-columns:repeat(2,1fr)}
+.card,.project{border:1px solid var(--line);padding:28px;background:rgba(255,255,255,.36)}.card .num{font-family:"Newsreader";font-size:3rem;color:var(--accent2)}
+.card h3,.project h3{font-size:1.45rem}.card p,.project p{color:var(--muted)}
+.project.featured{margin-top:45px;background:var(--white)}.project-head{display:flex;justify-content:space-between;gap:20px}.status{height:max-content;border:1px solid var(--accent);padding:5px 9px;font-size:.75rem}
+.what-how-result{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;border-top:1px solid var(--line);margin-top:20px;padding-top:20px}.what-how-result b{color:var(--ink);display:block;margin-bottom:8px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}.notice{border-left:4px solid var(--accent2);padding:5px 20px;margin:35px 0;color:var(--muted)}
+.pub-list article{display:grid;grid-template-columns:50px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}.pub-list h3,.pub-list p{margin:0}.pub-list p{color:var(--muted)}
+.timeline{max-width:850px;margin-top:45px;border-left:1px solid var(--ink);padding-left:35px}.timeline article{position:relative;padding:0 0 50px}.dot{position:absolute;width:11px;height:11px;border-radius:50%;background:var(--ink);left:-41px;top:7px}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:45px}.tool-grid article{background:var(--paper);padding:25px}.tool-grid p{color:var(--muted)}
+.connect{background:var(--ink);color:var(--paper)}.connect .section-label{color:#a9c4b8}.connect .lead{color:#b9c0bc}.connect-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:80px}
+.contact-card{border:1px solid #53605a;padding:28px}.contact-card a{display:block;padding:7px 0;color:var(--paper)}.small{font-size:.8rem;color:#b9c0bc}.footer{padding:25px 0;display:flex;justify-content:space-between;color:var(--muted);font-size:.8rem}
+@media(max-width:800px){
+  .menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:20px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}
+  .hero{padding-top:55px}.hero-grid,.connect-grid{grid-template-columns:1fr}.hero-card{display:none}
+  .metrics{grid-template-columns:repeat(2,1fr)}.metrics div:nth-child(2){border-right:0}
+  .three,.two,.project-grid,.what-how-result,.tool-grid{grid-template-columns:1fr}
+  h1{font-size:3.4rem}.section{padding:75px 0}
+}
+
+.text-link{display:inline-block;margin-top:8px;font-weight:600;color:var(--accent);text-decoration:none}
+.text-link:hover{text-decoration:underline}
+.disabled-link{display:block;padding:7px 0;color:#8f9994}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}
+.gallery-grid figure{margin:0;background:#fff;border:1px solid var(--line);overflow:hidden}
+.gallery-grid img{display:block;width:100%;height:290px;object-fit:cover}
+.gallery-grid figcaption{padding:14px 16px;color:var(--muted);font-size:.86rem}
+.gallery-grid .gallery-wide{grid-column:span 2}
+.gallery-grid .gallery-wide img{height:390px}
+@media(max-width:800px){.gallery-grid{grid-template-columns:1fr}.gallery-grid .gallery-wide{grid-column:span 1}.gallery-grid img,.gallery-grid .gallery-wide img{height:auto}}
+
+/* Selected wildfire-smoke research infographic */
+.hero-grid{grid-template-columns:minmax(0,.85fr) minmax(520px,1.15fr);gap:42px}
+.hero-figure-card{padding:10px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 45px rgba(23,33,29,.08)}
+.hero-figure-card img{display:block;width:100%;height:auto;border-radius:8px}
+.hero-figure-card .figure-caption{margin:10px 8px 4px;color:var(--muted);font-size:.82rem}
+@media(max-width:1050px){.hero-grid{grid-template-columns:1fr}.hero-figure-card{display:block;max-width:900px}}
+@media(max-width:800px){.hero-figure-card{display:block;padding:6px}.hero-figure-card .figure-caption{font-size:.76rem}}
