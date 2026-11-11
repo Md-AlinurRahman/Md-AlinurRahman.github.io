@@ -114,3 +114,10 @@ h3{line-height:1.2}.lead{font-size:1.12rem;color:var(--muted);max-width:760px}
     object-fit:contain;
   }
 }
+
+/* Teaching & academic service: course labels and laboratory duties */
+.teaching-cards .card{min-width:0}
+.teaching-cards .teaching-course{margin:18px 0 10px;color:var(--ink)}
+.teaching-course-list{margin:16px 0 0;padding-left:20px;color:var(--muted)}
+.teaching-course-list li{margin:9px 0;line-height:1.5}
+.teaching-course-list strong{color:var(--ink)}
