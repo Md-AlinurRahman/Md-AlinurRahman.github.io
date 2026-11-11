@@ -6,3 +6,6 @@ btn.addEventListener("click", () => {
   btn.setAttribute("aria-expanded", open);
 });
 document.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click",()=>links.classList.remove("open")));
+
+const awardCount = document.getElementById("award-count");
+if (awardCount) awardCount.textContent = document.querySelectorAll(".award-item").length;
