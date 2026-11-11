@@ -94,3 +94,23 @@ h3{line-height:1.2}.lead{font-size:1.12rem;color:var(--muted);max-width:760px}
   .awards-intro{align-items:flex-start;flex-direction:column}
   .awards-counter{text-align:left}
 }
+
+/* New 2025–2026 academic milestones in the research gallery */
+.gallery-grid .gallery-feature img{
+  height:390px;
+  object-fit:cover;
+  object-position:center center;
+}
+.gallery-grid .gallery-graduation img{
+  height:390px;
+  object-fit:contain;
+  object-position:center center;
+  background:var(--soft);
+}
+@media(max-width:800px){
+  .gallery-grid .gallery-feature img,
+  .gallery-grid .gallery-graduation img{
+    height:auto;
+    object-fit:contain;
+  }
+}
